@@ -1,0 +1,500 @@
+    3  git pu
+    4  gitlab-ctl start
+    5  ls
+    6  cd OpenVPNStats/
+    7  watch -n 5 python vpnstats.py 
+    8  ping 10.8.0.6 
+    9  tellmepublicip
+   10  getent passwd
+   11  watch -n 5 python vpnstats.py 
+   12  ssh karacal@10.8.0.6
+   13  ls
+   14  cd /etc/openvpn/
+   15  ls
+   16  cd ccd
+   17  ls
+   18  rm client1 
+   19  ls
+   20  systemctl stop openvpn@server
+   21  systemctl enable openvpn@server.service
+   22  systemctl start openvpn@server
+   23  ip route show
+   24  ping 192.168.1.200
+   25  cat ../server.conf |grep route
+   26  vim ../server.conf |grep route
+   27  vim ../server.conf
+   28  ls
+   29  cd ..
+   30  ls
+   31  ll
+   32  rm .server.conf.swp 
+   33  vim server.conf 
+   34  cd ccd
+   35  ls
+   36  more 1
+   37  cd ..
+   38  systemctl stop openvpn@server
+   39  systemctl enable openvpn@server.service
+   40  systemctl start openvpn@server
+   41  ip route show
+   42  ping 10.8.0.6
+   43  ip route show
+   44  route add -net 192.168.1.200 netmask 255.255.255.255 gw 10.8.0.6
+   45  vim /etc/openvpn/server.conf 
+   46  vim server.conf 
+   47  cd ccd
+   48  ls
+   49  cp 1 client1
+   50  systemctl stop openvpn@server
+   51  systemctl enable openvpn@server.service
+   52  systemctl start openvpn@server
+   53  ping 10.8.0.6
+   54  ip route show
+   55  ping 192.168.1.200
+   56  ls
+   57  cd ..
+   58  ls
+   59  vim server.conf
+   60  cd ccd/
+   61  ls
+   62  cp client1 client2
+   63  cat *
+   64  systemctl stop openvpn@server
+   65  systemctl enable openvpn@server.service
+   66  systemctl start openvpn@server
+   67  ip route show
+   68  ping 192.168.1.200
+   69  ping 10.8.0.6
+   70  ping 192.168.1.200
+   71  ping 10.8.0.6
+   72  ip route show]
+   73  ip route show
+   74  ping 10.8.0.6
+   75  route
+   76  ping 10.8.0.6
+   77  vim ../server.conf
+   78  systemctl stop openvpn@server
+   79  systemctl enable openvpn@server.service
+   80  systemctl start openvpn@server
+   81  ping 10.8.0.6
+   82  ls
+   83  rm client2
+   84  ping 10.8.0.6
+   85  service openvpn status
+   86  ping 10.8.0.6
+   87  systemctl stop openvpn@server.service
+   88  systemctl enable openvpn@server.service
+   89  systemctl start openvpn@server.service
+   90  ping 10.8.0.6
+   91  cat /etc/openvpn/server.conf |grep -v [;#]
+   92  cat /etc/openvpn/server.conf |grep -v [;-#]
+   93  cat /etc/openvpn/server.conf |grep -v (;|#)
+   94  cat /etc/openvpn/server.conf |grep -E (;|#)
+   95  cat /etc/openvpn/server.conf |grep -e (;|#)
+   96  cat /etc/openvpn/server.conf |grep -e ';|#'
+   97  cat /etc/openvpn/server.conf |grep -v ';|#'
+   98  cat /etc/openvpn/server.conf |grep -v ';.*#'
+   99  cat /etc/openvpn/server.conf |grep -v ; |grep -v #
+  100  cat /etc/openvpn/server.conf |grep -v ; | grep -v #
+  101  cat /etc/openvpn/server.conf |grep -v ;grep -v #
+  102  cat /etc/openvpn/server.conf |grep -v ; grep -v #
+  103  cat /etc/openvpn/server.conf grep -v ; grep -v #
+  104  cat /etc/openvpn/server.conf grep -v ;
+  105  cat /etc/openvpn/server.conf |grep -v ;
+  106  cat /etc/openvpn/server.conf | grep -v ;
+  107  cat /etc/openvpn/server.conf grep -v #
+  108  cat /etc/openvpn/server.conf grep -v # 
+  109  grep -v # server.conf
+  110  cd ..
+  111  cat /etc/openvpn/server.conf grep -v # 
+  112  grep -v # server.conf
+  113  cat server.conf |grep #
+  114  cat server.conf |grep status
+  115  cat server.conf |grep '#'
+  116  cat server.conf |grep -v '#' |grep -v ';'
+  117  ping 10.8.0.6
+  118  cat server.conf |grep -v '#' |grep -v ';'
+  119  ping 10.8.0.6
+  120  cat server.conf
+  121  netstat -anr
+  122  pin g10.8.0.6
+  123  ping 10.8.0.6
+  124  traceroute 192.168.1.200
+  125  ls
+  126  more 1
+  127  cd ..
+  128  less openvpn-status.log 
+  129  cat openvpn-status.log 
+  130  tail -f /var/log/gitlab/* -f /var/log/openvpn
+  131  cd .
+  132  cd ..
+  133  ls
+  134  cd /home/ugur.ersoy/
+  135  ls
+  136  cd OpenVPNStats/
+  137  ls
+  138  more vpnstats.py 
+  139  tail -f /etc/openvpn/openvpn-status.log
+  140  reboot now
+  141  route 
+  142  ip route add 192.168.1.200/32 dev tun0
+  143  route
+  144  ping 10.8.0.6
+  145  ping 192.168.1.200
+  146  route
+  147  ip route del 192.168.1.200/32 dev tun0
+  148  route
+  149  route add 192.168.1.200/32 via tun0
+  150  ip -help
+  151  ip --help
+  152  ip route add 192.168.1.200/32 
+  153  ip route add 192.168.1.200/32 via 10.8.0.6
+  154  ip route add 192.168.1.200/32 via tun0
+  155  ifconfig
+  156  route add -net 192.168.1.200/32 gw 10.8.0.6
+  157  route add -net 192.168.1.200 netmask 255.255.25.255 gw 10.8.0.6 dev tun0
+  158  route add -net 192.168.1.200 netmask 255.255.25.255 
+  159  route add -net 192.168.1.200 netmask 255.255.255.255 gw 10.8.0.6 dev tun0
+  160  ip route show
+  161  route add -net 192.168.1.200 netmask 255.255.255.255 gw 10.8.0.2 dev tun0
+  162  ping 192.168.1.200
+  163  ip route show
+  164  ping 10.8.0.2
+  165  route del -net 192.168.1.200 netmask 255.255.255.255 gw 10.8.0.2 dev tun0
+  166  ping 10.8.0.2
+  167  ip route show
+  168  route del -net 192.168.1.200 netmask 255.255.255.255 gw 10.8.0.6 dev tun0
+  169  route add -net 192.168.1.200 netmask 255.255.255.255 gw 10.8.0.2 dev tun0
+  170  route del -net 192.168.1.200 netmask 255.255.255.255 gw 10.8.0.2 dev tun0
+  171  route add -net 192.168.1.200 netmask 255.255.255.255 gw 10.8.0.6 dev tun0
+  172  ping 10.8.0.6
+  173  route add -net 192.168.1.200 netmask 255.255.255.255 gw 10.8.0.0 dev tun0
+  174  route add -net 192.168.1.200 netmask 255.255.255.255 gw 10.8.0.5 dev tun0
+  175  ip route show
+  176  route add -net 192.168.1.0 netmask 255.255.255.0 gw 10.8.0.6 dev tun0
+  177  route add -net 192.168.1.0 netmask 255.255.255.0 gw 10.8.0.6
+  178  cd /etc/openvpn
+  179  ls
+  180  vim server.conf
+  181  ls
+  182  client-config-dir ccd
+  183  ls
+  184  mkdir ccd
+  185  cd ccd
+  186  ls
+  187  vim client1
+  188  cat cl
+  189  cat client1
+  190  cd ..
+  191  ls
+  192  vim server.conf
+  193  route add -net 192.168.1.0 netmask 255.255.255.0 gw 10.8.0.6 dev tun0
+  194  route add -net 192.168.1.0 netmask 255.255.255.0 gw 10.8.0.6
+  195  service openserver status
+  196  systemctl restart openvpn@server
+  197  route add -net 192.168.1.0 netmask 255.255.255.0 gw 10.8.0.6
+  198  systemctl restart openvpn@server
+  199  systemctl stop openvpn@server
+  200  systemctl enable openvpn@server
+  201  systemctl start openvpn@server
+  202  route add -net 192.168.1.0 netmask 255.255.255.0 gw 10.8.0.6
+  203  ping 10.8.0.6
+  204  cd /etc/openvpn
+  205  ls
+  206  systemctl enable openvpn@server.service
+  207  systemctl start openvpn@server
+  208  ping 10.8.0.6
+  209  route add -net 192.168.1.0 netmask 255.255.255.0 gw 10.8.0.6
+  210  route
+  211  ls
+  212  cd ccd
+  213  ls
+  214  more 1
+  215  more client1
+  216  ping 192.168.1.200
+  217  traceroute 192.168.1.200
+  218  service networking restart
+  219  route
+  220  ip route show
+  221  cat ../server.conf |grep route
+  222  route add -net 192.168.1.0 netmask 255.255.255.0 gw 10.8.0.6
+  223  ipconfig tun0
+  224  ifconfig tun0
+  225  route del -net 192.168.1.0 netmask 255.255.255.0 gw 10.8.0.2
+  226  ip route show
+  227  cd ..
+  228  vim server.conf
+  229  ls
+  230  find / -name *ccd*
+  231  ip route show
+  232  systemctl stop openvpn@server
+  233  systemctl enable openvpn@server.service
+  234  systemctl start openvpn@server
+  235  ping 10.8.0.6
+  236  route
+  237  ping 10.8.0.6
+  238  ping 192.168.1.200 
+  239  cat /etc/server.conf
+  240  ping 10.8.0.6
+  241  ls
+  242  ipconfig
+  243  ip a
+  244  ip route show
+  245  exit
+  246  cat /etc/passwd
+  247  sudo su ugur.ersoy
+  248  exit
+  249  s
+  250  ls
+  251  ping 10.8.0.6
+  252  route
+  253  ping 192.168.1.200
+  254  sysctl net.ipv4.ip_forward
+  255  ping 192.168.1.200
+  256  cat /etc/openvpn/server.conf 
+  257  vim /etc/openvpn/server.conf 
+  258  ls
+  259  cd /etc/openvpn/
+  260  ls
+  261  cd ccd
+  262  ls
+  263  more client1 
+  264  more 1
+  265  rm 1
+  266  ping 192.168.1.200
+  267  tcpdump "port not 22"
+  268  tcpdump icmp
+  269  cd ..
+  270  ls
+  271  vim server.conf
+  272  history |grep openvpn
+  273  systemctl stop openvpn@server
+  274  systemctl enable openvpn@server.service
+  275  systemctl start openvpn@server
+  276  route
+  277  ping 192.168.1.200
+  278  tcpdump icmp
+  279  ping 192.168.1.200
+  280  route
+  281  ping 192.168.1.99
+  282  ping 192.168.1.200
+  283  ssh root@192.168.1.200 -p 2222
+  284  iptables -t nat -L
+  285  cd /home/ugur.ersoy
+  286  ls
+  287  cat coolcommands.cl 
+  288  iptables -t nat -A PREROUTING -p tcp -d 35.242.153.36 --dport 9413 -j DNAT --to-destination 192.168.1.200:80
+  289  iptables -t nat -L
+  290  iptables -t nat -A PREROUTING -p UDP --dport 7004 -j REDIRECT --to-port 9229
+  291  iptables -t nat -L
+  292  tcpdump port 9413
+  293  ufw allow tcp/9413
+  294  ufw allow 9413/tcp
+  295  tcpdump port 9413
+  296  iptables -t nat -A PREROUTING -p tcp -d 35.242.153.36 --dport 9413 -j REDIRECT --to-destination 192.168.1.200:80
+  297  cat coolcommands.cl 
+  298  vim coolcommands.cl 
+  299  iptables -A FORWARD -p tcp -d 192.168.1.200 --dport 80 -j ACCEPT
+  300  iptables -t nat -L
+  301  iptables -t nat -delete PREROUTING -p tcp -d 35.242.153.36 --dport 9413 -j REDIRECT --to-destination 192.168.1.200:80
+  302  iptables -h
+  303  iptables -h |grep dele
+  304  iptables -t nat -D PREROUTING -p tcp -d 35.242.153.36 --dport 9413 -j REDIRECT --to-destination 192.168.1.200:80
+  305  iptables -L
+  306  iptables -t nat -L
+  307  cat com
+  308  cat coolcommands.cl 
+  309  history |grep dNAT
+  310  history |grep DNAT
+  311  iptables -t nat -D PREROUTING -p tcp -d 35.242.153.36 --dport 9413 -j DNAT --to-destination 192.168.1.200:80
+  312  echo "iptables -t nat -A PREROUTING -p tcp -d 35.242.153.36 --dport 9413 -j DNAT --to-destination 192.168.1.200:80" >> coolcommands.cl 
+  313  cat coolcommands.cl 
+  314  iptables -t nat -L
+  315  iptables -t nat -D OUTPUT -p tcp --dport 9413 -j DNAT --to-destination 192.168.1.200:80
+  316  iptables -t nat -A INPUT -p tcp --dport 9413 -j DNAT --to-destination 192.168.1.200:80
+  317  sudo iptables -L | grep policy
+  318  iptables -t nat -L
+  319  cat coolcommands.cl 
+  320  ping 192.168.1.200
+  321  history |grep OUTPUT
+  322  iptables -t nat -D OUTPUT -p tcp --dport 9413 -j DNAT --to-destination 192.168.1.200:80
+  323  iptables -t nat -A OUTPUT -p tcp --dport 9413 -j DNAT --to-destination 192.168.1.200:80
+  324  cat >> coolcommands.cl 
+  325  cat coolcommands.cl 
+  326  iptables -t nat -L
+  327  ping 192.168.1.200
+  328  route
+  329  iptables -t nat -A OUTPUT -p tcp --dport 9413 -j DNAT --to-destination 192.168.1.200:80 LOG
+  330  tail -f /var/log/kern.log
+  331  tcpdump port 9413
+  332  iptables -t nat -A OUTPUT -p tcp --dport 9413 -j DNAT --to-destination 192.168.1.200:80 LOG -t nat -A OUTPUT -p tcp --d 9413 -j DNAT --to-destination 192.168.1.200:80 
+  333  tellmepublic
+  334  tellmepublicip
+  335  iptables -t nat -A OUTPUT -p tcp --d 35.242.153.36:9413 -j DNAT --to-destination 192.168.1.200:80
+  336  iptables -t nat -A OUTPUT -p tcp -d 35.242.153.36:9    413 -j DNAT --to-destination 192.168.1.200:80
+  337  ping 192.168.1.200
+  338  iptables -t nat -L
+  339  iptables -t nat -A PREROUTING -p tcp --dport 9413 -j DNAT --to-destination 192.168.1.200:80 LOG
+  340  iptables -t nat -A PREROUTING -p tcp --dport 9413 -j DNAT --to-destination 192.168.1.200:80
+  341  ping 192.168.1.200
+  342  l
+  343  ls
+  344  cd vpn
+  345  ls
+  346  cd ..
+  347  cd OpenVPNStats/
+  348  ls
+  349  python vpnstats.py 
+  350  ping 192.168.1.1
+  351  ping 192.168.1.99
+  352  ping 192.168.1.200
+  353  route
+  354  history | grep route
+  355  route add -net 192.168.1.200 netmask 255.255.255.255 gw 10.8.0.2
+  356  ping 192.168.1.200
+  357  route
+  358  route del -net 192.168.1.200 netmask 255.255.255.255 gw 10.8.0.2
+  359  route
+  360  ping 192.168.1.200
+  361  ping 192.168.1.200 
+  362  ssh karacal@192.168.1.99
+  363  tellmepublicip
+  364  ls
+  365  cat isis_testlab.log 
+  366  vim isis_testlab.log 
+  367  cd OpenVPNStats/
+  368  ls
+  369  python vpnstats.py 
+  370  ping 192.168.1.99
+  371  route
+  372  ping 192.168.1.99
+  373  history |grep v[n
+  374  history |grep vpn
+  375  systemctl restart openvpn@server
+  376  ping 192.168.1.99
+  377  python vpnstats.py 
+  378  ping 192.168.1.99
+  379  route
+  380  ping 10.8.0.6
+  381  ifconfig tun0 down
+  382  ping 10.8.0.6
+  383  route
+  384  ifconfig tun0 up
+  385  ping 10.8.0.6
+  386  route
+  387  ping 10.8.0.6
+  388  systemctl restart openvpn@server
+  389  systemctl enable openvpn@server
+  390  systemctl start openvpn@server
+  391  ping 10.8.0.6
+  392  python vpnstats.py 
+  393  reboot now
+  394  ls
+  395  cd OpenVPNStats/
+  396  ls
+  397  python vpnstats.py 
+  398  ping 10.8.0.6
+  399  netstat -nr
+  400  ping 10.8.0.6
+  401  ping 10.8.0.5
+  402  ping 192.168.1.99 
+  403  shutdown now
+  404  ls
+  405  cd GitDowns/
+  406  ls
+  407  git init
+  408  git clone git@github.com:ugernw/Multivendor-BackupScript.git
+  409  cat ~/.ssh/id_rsa.pub 
+  410  git clone git@github.com:ugernw/Multivendor-BackupScript.git
+  411  ls
+  412  cd Multivendor-BackupScript/
+  413  ls
+  414  vim netwok
+  415  vim networkdevicesbackupscript.py 
+  416  git add .
+  417  git status
+  418  git commit -m "class method added"
+  419  git push
+  420  git log
+  421  git log --oneline
+  422  git diff a432fb0
+  423  git diff a432fb0 b4d0215
+  424  crontab -e
+  425  ls
+  426  cd ..
+  427  ls
+  428  cd ..
+  429  ls
+  430  cd EveryDayScripts/
+  431  ls
+  432  vim savecommandhistory.sh
+  433  ls
+  434  chmod 755 savecommandhistory.sh 
+  435  ls
+  436  ./savecommandhistory.sh 
+  437  which bash
+  438  vim savecommandhistory.sh 
+  439  ./savecommandhistory.sh 
+  440  vim savecommandhistory.sh 
+  441  ./savecommandhistory.sh 
+  442  which sh
+  443  which bash
+  444  vim savecommandhistory.sh 
+  445  ./savecommandhistory.sh 
+  446  vim savecommandhistory.sh 
+  447  ./savecommandhistory.sh 
+  448  ls
+  449  ll Historyofhistory/
+  450  cat Historyofhistory/tarih.txt 
+  451  history
+  452  ls
+  453  history > test.txt
+  454  ls
+  455  cat test.txt 
+  456  rm test.txt 
+  457  ls
+  458  cd ..
+  459  cd EveryDayScripts/
+  460  ls
+  461  vim savecommandhistory.sh 
+  462  ls
+  463  ./savecommandhistory.sh 
+  464  cat Historyofhistory/
+  465  ll Historyofhistory/
+  466  vim savecommandhistory.sh 
+  467  tarih=date |awk '{print $2 $3 $6}'
+  468  $tarih
+  469  echo $tarih
+  470  date
+  471  tarih=`date |awk '{print $2 $3 $6}'`
+  472  echo $tarih
+  473  vim savecommandhistory.sh 
+  474  ls
+  475  ./savecommandhistory.sh 
+  476  ll Historyofhistory/
+  477  cat Historyofhistory/Nov62018.txt 
+  478  ls
+  479  vim savecommandhistory.sh 
+  480  ls
+  481  ./savecommandhistory.sh 
+  482  ls
+  483  cd Historyofhistory/
+  484  ls
+  485  cat Nov62018.txt 
+  486  history
+  487  cat sav
+  488  cat ../savecommandhistory.sh 
+  489  tarih=`date |awk '{print $2 $3 $6}'`
+  490  history > /home/ugur.ersoy/EveryDayScripts/Historyofhistory/$tarih.txt
+  491  ls
+  492  cat Nov62018.txt 
+  493  vim ../savecommandhistory.sh 
+  494  cd ..
+  495  ls
+  496  ./savecommandhistory.sh 
+  497  vim savecommandhistory.sh 
+  498  ls
+  499  tarih=`date |awk '{print $2 $3 $6}'`
+  500  history > /home/ugur.ersoy/EveryDayScripts/Historyofhistory/$tarih.ug
+  501  tarih=`date |awk '{print $2 $3 $6}'`
+  502  history > /home/ugur.ersoy/EveryDayScripts/Historyofhistory/$tarih.ug
