@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+# Written by uger to keep track of homeserver
+
+
 function get_localipaddr() {
 	localipaddr="$(ip addr show wlp2s0 | grep 'inet\s' | awk '{print $2}')"
 	echo $localipaddr
